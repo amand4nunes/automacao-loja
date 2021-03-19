@@ -1,6 +1,6 @@
 package desafio.page;
 
-import org.openqa.selenium.By;
+import desafio.page.compraDeItem.DetalhesProdutoPage;
 import org.openqa.selenium.WebDriver;
 
 public class IndexPage extends BasePage{

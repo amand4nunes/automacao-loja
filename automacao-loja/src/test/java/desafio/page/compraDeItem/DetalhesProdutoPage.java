@@ -1,7 +1,7 @@
-package desafio.page;
+package desafio.page.compraDeItem;
 
-import org.kohsuke.rngom.parse.host.Base;
-import org.openqa.selenium.By;
+import desafio.page.BasePage;
+import desafio.page.compraDeItem.CardCheckoutPage;
 import org.openqa.selenium.WebDriver;
 
 public class DetalhesProdutoPage extends BasePage {

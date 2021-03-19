@@ -1,6 +1,8 @@
 package desafio.test;
 
 import desafio.page.*;
+import desafio.page.cadastroCliente.FormularioDeCadastroPage;
+import desafio.page.cadastroCliente.MinhaContaPage;
 import org.easetech.easytest.annotation.DataLoader;
 import org.easetech.easytest.annotation.Param;
 import org.easetech.easytest.runner.DataDrivenTestRunner;

@@ -1,8 +1,9 @@
-package desafio.page;
+package desafio.page.compraDeItem;
 
+import desafio.page.BasePage;
 import org.openqa.selenium.WebDriver;
 
-public class CardCheckoutPage extends BasePage{
+public class CardCheckoutPage extends BasePage {
     public CardCheckoutPage(WebDriver driver) {
         super(driver);
     }

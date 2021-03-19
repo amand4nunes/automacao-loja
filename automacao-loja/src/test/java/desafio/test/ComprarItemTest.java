@@ -1,6 +1,10 @@
 package desafio.test;
 
 import desafio.page.*;
+import desafio.page.cadastroCliente.MinhaContaPage;
+import desafio.page.compraDeItem.CardCheckoutPage;
+import desafio.page.compraDeItem.DetalhesProdutoPage;
+import desafio.page.compraDeItem.ResumoDoCarrinhodeCompraPage;
 import org.easetech.easytest.annotation.DataLoader;
 import org.easetech.easytest.annotation.Param;
 import org.easetech.easytest.runner.DataDrivenTestRunner;
@@ -10,8 +14,6 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 @RunWith(DataDrivenTestRunner.class)
 @DataLoader(filePaths = "detalhesCompra.csv")

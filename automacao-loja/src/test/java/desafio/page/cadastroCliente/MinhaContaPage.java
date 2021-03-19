@@ -1,8 +1,9 @@
-package desafio.page;
+package desafio.page.cadastroCliente;
 
+import desafio.page.PageObject;
 import org.openqa.selenium.WebDriver;
 
-public class MinhaContaPage extends PageObject{
+public class MinhaContaPage extends PageObject {
     private static final String URL_MY_ACCOUNT = "http://automationpractice.com/index.php?controller=my-account";
     public MinhaContaPage(WebDriver driver) {
         super(driver);

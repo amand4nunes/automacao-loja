@@ -1,9 +1,10 @@
-package desafio.page;
+package desafio.page.compraDeItem;
 
+import desafio.page.BasePage;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
-public class ResumoDoCarrinhodeCompraPage extends BasePage{
+public class ResumoDoCarrinhodeCompraPage extends BasePage {
     public ResumoDoCarrinhodeCompraPage(WebDriver driver) {
         super(driver);
     }

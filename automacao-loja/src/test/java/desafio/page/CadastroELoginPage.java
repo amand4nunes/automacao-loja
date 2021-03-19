@@ -1,7 +1,8 @@
 package desafio.page;
 
+import desafio.page.cadastroCliente.FormularioDeCadastroPage;
+import desafio.page.cadastroCliente.MinhaContaPage;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public class CadastroELoginPage extends BasePage {

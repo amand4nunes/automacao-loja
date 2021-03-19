@@ -1,10 +1,8 @@
-package desafio.page;
+package desafio.page.cadastroCliente;
 
-import com.sun.xml.internal.bind.v2.runtime.reflect.opt.Const;
-import org.openqa.selenium.By;
+import desafio.page.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
 
 public class FormularioDeCadastroPage extends BasePage {
     private static final String URL_FORMULARIO_DE_CADASTRO = "http://automationpractice.com/index.php?controller=authentication&back=my-account#account-creation";
