@@ -24,7 +24,7 @@ public class ComprarItemTest {
     @Before
     public void before() throws InterruptedException {
         cadastroELogin.clicarEmEntrar();
-        Thread.sleep(10000);
+        Thread.sleep(1000);
     }
 
     @After

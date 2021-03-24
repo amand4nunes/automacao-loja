@@ -52,7 +52,7 @@ public class CadastroDeClienteTest {
 
             throws InterruptedException {
         FormularioDeCadastroPage formularioDeCadastro = cadastroOuLogin.cadastrarNovoClienteParteEmail(email);
-        Thread.sleep(10000);
+        Thread.sleep(2000);
 
         formularioDeCadastro
                 .preencherDadosPessoais(genero, primeiroNome, sobreNome, email, senha, diaNascimento, mesNascimento, anoNascimento);
