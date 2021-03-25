@@ -21,7 +21,7 @@ public class CadastroDeClienteTest {
     @Before
     public void before() throws InterruptedException {
         cadastroOuLogin.clicarEmEntrar();
-        Thread.sleep(1000);
+     
     }
 
     @After
@@ -52,7 +52,7 @@ public class CadastroDeClienteTest {
 
             throws InterruptedException {
         FormularioDeCadastroPage formularioDeCadastro = cadastroOuLogin.cadastrarNovoClienteParteEmail(email);
-        Thread.sleep(2000);
+       
 
         formularioDeCadastro
                 .preencherDadosPessoais(genero, primeiroNome, sobreNome, email, senha, diaNascimento, mesNascimento, anoNascimento);
@@ -61,8 +61,7 @@ public class CadastroDeClienteTest {
                 .preencherEndereco(primeiroNome, sobreNome, companhia, endereco, endereco2, cidade, estado, cep, pais, infoAdicionais, telefoneResidencial, telefoneCelular, enderecoAlternativos);
         Assert.assertTrue(minhaConta.isMinhaContaPage());
         Thread.sleep(1000);
-        IndexPage home = minhaConta.irParaIndexPage();
-        Assert.assertTrue(home.isIndexPage());
+       
 
     }
 

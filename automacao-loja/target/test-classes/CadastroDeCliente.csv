@@ -1,2 +1,2 @@
-cadastrarCliente,genero,primeiroNome,sobreNome,email,senha,diaNascimento,mesNascimento,anoNascimento,companhia,endereco,endereco2,cidade,estado,cep,pais,infoAdicionais,telefoneResidencial,telefoneCelular,enderecoAlternativos,Duration(ms)
-"",mulher,ana,silva,email1903v5@email.com,amarelo04,8,December,1998,,Av. José Barbosa de Siqueira,n 000,osasco,Florida,00000,United States,infoAdicionais,40028922,11970207070,Av. José Barbosa de Siqueiraq,13438.0
+cadastrarCliente,genero,primeiroNome,sobreNome,email,senha,diaNascimento,mesNascimento,anoNascimento,companhia,endereco,endereco2,cidade,estado,cep,pais,infoAdicionais,telefoneResidencial,telefoneCelular,enderecoAlternativos
+                      ,mulher,ana,silva,email1903v5@email.com,amarelo04,"8","December","1998","",Av. José Barbosa de Siqueira,n 000,osasco,Florida,00000,United States,infoAdicionais,40028922,11970207070,Av. José Barbosa de Siqueiraq

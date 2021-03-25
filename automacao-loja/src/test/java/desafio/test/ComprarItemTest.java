@@ -24,7 +24,7 @@ public class ComprarItemTest {
     @Before
     public void before() throws InterruptedException {
         cadastroELogin.clicarEmEntrar();
-        Thread.sleep(1000);
+  
     }
 
     @After
@@ -46,17 +46,11 @@ public class ComprarItemTest {
         detalheProduto.selecionarQuantidade(quantidade);
         detalheProduto.selecionarTamanho(tamanho);
         detalheProduto.selecionarCor(cor);
-        Thread.sleep(1000);
         CardCheckoutPage checkoutPage = detalheProduto.adicionarAoCarrinho();
-        Thread.sleep(2000);
         ResumoDoCarrinhodeCompraPage resumoDeCompra = checkoutPage.proseguirCheckout();
-        Thread.sleep(2000);
         resumoDeCompra.sumario();
-        Thread.sleep(2000);
         resumoDeCompra.endereco();
-        Thread.sleep(2000);
         resumoDeCompra.frete();
-        Thread.sleep(2000);
         resumoDeCompra.pagamento();
         Assert.assertTrue(resumoDeCompra.buscarTextoNaPagina("Your order on My Store is complete."));
 

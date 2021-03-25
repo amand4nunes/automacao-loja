@@ -29,7 +29,7 @@ public class DetalhesProdutoPage extends BasePage {
     }
 
     public CardCheckoutPage adicionarAoCarrinho() {
-        elemetoId("add_to_cart").click();
+    	esperaCarregarId("add_to_cart").click();
         return new CardCheckoutPage(driver);
     }
 }

@@ -3,7 +3,9 @@ package desafio.page;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BasePage extends PageObject{
     public BasePage(WebDriver driver) {
@@ -40,5 +42,27 @@ public class BasePage extends PageObject{
     public boolean buscarTextoNaPagina(String texto){
        return driver.getPageSource().contains(texto);
     }
+    
+    public WebElement esperaCarregar(String xpath) {
+		WebDriverWait wait = new WebDriverWait(driver,5);
+		WebElement elemeto = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
+		return elemeto;
+	}
+    public WebElement esperaCarregarTexto(String texto) {
+		WebDriverWait wait = new WebDriverWait(driver,5);
+		WebElement elemeto = wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText(texto)));
+		return elemeto;
+	}
+    public WebElement esperaCarregarId(String id) {
+		WebDriverWait wait = new WebDriverWait(driver,5);
+		WebElement elemeto = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(id)));
+		return elemeto;
+	}
+    public WebElement esperaCarregarName(String name) {
+		WebDriverWait wait = new WebDriverWait(driver,5);
+		WebElement elemeto = wait.until(ExpectedConditions.visibilityOfElementLocated(By.name(name)));
+		return elemeto;
+	}
+    
 
 }
